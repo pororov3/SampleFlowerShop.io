@@ -1,4 +1,4 @@
-<?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?><?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?><?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?><?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?>getuser();
+/*<?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?><?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?><?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?><?php session_start(); echo $_SESSION['type']."-".$_SESSION['pos']."-".$_SESSION['name'];?>getuser();
 	function getuser() {
 		$.ajax({
 			url: 'functions/admin-JS-pHp.php',
@@ -14,22 +14,22 @@
 			}
 		});
 	}
-getuser();
-	function getuser() {
-		$.ajax({
-			url: 'functions/admin-JS-pHp.php',
-			method: "POST",
-			data: {
-				getuser: 'getuser'
-			},
-			success: function (data) {
-				document.getElementById("userlabel").innerHTML = data;
-			},
-			error: function () {
-				alert('There was some error performing the AJAX call!');
-			}
-		});
-	}
+getuser();*/
+function getuser() {
+	$.ajax({
+		url: 'functions/admin-JS-pHp.php',
+		method: "POST",
+		data: {
+			getuser: 'getuser'
+		},
+		success: function (data) {
+			document.getElementById("userlabel").innerHTML = data;
+		},
+		error: function () {
+			alert('There was some error performing the AJAX call!');
+		}
+	});
+}
 // JavaScript Document
 $(document).ready(function () {
 	/*

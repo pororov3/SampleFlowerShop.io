@@ -14,7 +14,7 @@ if ( $action === "clientlogin" ) {
 	$uname = $_POST[ 'cllUsername' ];
 	$pass = $_POST[ 'cllPassword' ];
 	if ( $uname == 'admin' && $pass == 'admin' ) {
-		echo '<script type="text/javascript">window.location.href="/Admin/admin-login.php"</script>';
+		echo '<script type="text/javascript">window.location.href="../Admin/admin-login.php"</script>';
 		//header( "location: .\..\..\admin\admin-login.php" );
 		//die();
 		//echo 'window.location.href="admin-login.php"';
